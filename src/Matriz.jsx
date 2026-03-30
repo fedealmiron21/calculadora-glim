@@ -449,10 +449,10 @@ export default function Matriz() {
             <p style={{ margin:"0 0 12px", fontSize:14, fontWeight:600 }}>🔍 Capas de validación del Motor IA de Glim</p>
             <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:10 }}>
               {[
-                { icon:"🏷️", title:"Código MCC", desc:"Punto de partida — categoría asignada por Mastercard al comercio. Útil pero insuficiente por sí solo.", badge:"Base", bc:"rgba(255,255,255,0.08)", tc:"rgba(255,255,255,0.6)" },
-                { icon:"🏪", title:"Nombre del comercio", desc:"El sistema identifica el establecimiento por su razón social o nombre comercial registrado.", badge:"Capa 2", bc:"rgba(59,130,246,0.15)", tc:"#60a5fa" },
-                { icon:"📋", title:"Descripción de la transacción", desc:"El motor analiza el detalle textual del pago para identificar el tipo de bien o servicio consumido.", badge:"Capa 3", bc:"rgba(139,92,246,0.15)", tc:"#a78bfa" },
-                { icon:"📍", title:"Google Maps", desc:"Se valida la categoría, tipo de negocio y descripción pública del establecimiento, enriqueciendo la señal.", badge:"Capa 4", bc:"rgba(0,195,122,0.15)", tc:G },
+                { icon:"🔍", title:"Clasificación multicapa", desc:"Señales adicionales al MCC que permiten identificar correctamente el tipo de comercio y el destino del gasto.", badge:"Motor propio", bc:"rgba(0,195,122,0.15)", tc:G },
+                { icon:"🧠", title:"Aprendizaje continuo", desc:"Cada transacción procesada mejora la capacidad de clasificación futura del sistema.", badge:"IA", bc:"rgba(139,92,246,0.15)", tc:"#a78bfa" },
+                { icon:"👨‍💻", title:"Intervención experta", desc:"El equipo de Glim puede forzar reglas manualmente para casos específicos, complementando la automatización.", badge:"Híbrido", bc:"rgba(59,130,246,0.15)", tc:"#60a5fa" },
+                { icon:"📊", title:"Trazabilidad total", desc:"Cada transacción queda registrada con su clasificación, garantizando el soporte ante DIAN y UGPP.", badge:"Cumplimiento", bc:"rgba(245,158,11,0.15)", tc:"#f59e0b" },
               ].map((item,i)=>(
                 <div key={i} style={{ background:CARD2, borderRadius:12, padding:"12px" }}>
                   <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:6 }}>
